@@ -87,12 +87,55 @@
     localStorage.removeItem('userlogin');
   }
 
-  let a = 0;
-  let user = JSON.parse(localStorage.getItem('user'));
-  let ans = user.filter((val)=>{
-    if(val.role == "User"){
-      return a++;
-    }
-  });
-  document.getElementById('count').innerHTML = a;
+  // let a = 0;
+  // let user = JSON.parse(localStorage.getItem('user'));
+  // let ans = user.filter((val)=>{
+  //   if(val.role == "User"){
+  //     return a++;
+  //   }
+  // });
+  // document.getElementById('count').innerHTML = a;
+
+
+
+
+        let data = [{
+            name: 'Smit',
+            email: "smitkakadiya1009@gmail.com",
+            password: "smit@1009",
+            role : 'user'
+        }];
+        
+        const save = () => {
+            let nameElement = document.getElementById('name');
+            let emailElement = document.getElementById('email');
+            let passwordElement = document.getElementById('password');
+
+         
+
+            let obj = {
+                name: name,
+                email: email,
+                password: password,
+                role: 'user'
+            };
+
+            if (data[0].role === 'admin') {
+                if (localStorage.getItem('savedata') === null || localStorage.getItem('savedata') === undefined) {
+                    data.push(obj);
+                    localStorage.setItem('savedata', JSON.stringify(data));
+                } else {
+                    let val = JSON.parse(localStorage.getItem('savedata'));
+                    val.push(obj);
+                    localStorage.setItem('savedata', JSON.stringify(val));
+                }
+                alert("Thank you");
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('password').value = "";
+                // window.location.href = "index-2.html"
+            } else {
+                alert("Only admins can log in.");
+            }
+        };
 </script>

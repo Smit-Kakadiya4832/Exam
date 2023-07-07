@@ -43,13 +43,13 @@ a{
     width: auto;
 }
 .body{
-    background-color: rgb(42, 52, 71);
+    background-color: rgb(0, 0, 0);
     height: 1000px;
 }
 .sidemenu{
     width: 13%;
     height: 100vh;
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 1px solid rgba(150, 131, 131, 0.12);
 }
 .work{
     width: 87%;
@@ -58,12 +58,12 @@ a{
 .header{
     height: 75px;
     padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(150, 131, 131, 0.12);
 }
 .language, .login, .setting{
     width: 40px;
     height: 40px;
-    background-color: #5d87ff;
+    background-color: #000000;
     border-radius: 50%;
     color: white;
     font-size: 24px;
@@ -79,7 +79,7 @@ a{
     border-radius: 100%;
 }
 li > a{
-    color: rgb(124, 143, 172);
+    color: rgb(114, 156, 220);
     font-size: 16px;
 }
 .users{
@@ -91,12 +91,12 @@ li > a{
     text-align: center;
 }
 .users i{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .login-menu{
     right: 0%;
     top: 100%;
-    background-color: rgb(42, 52, 71);
+    background: rgb(13, 202, 240);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
     padding: 20px;
     width: 200px;
@@ -108,7 +108,7 @@ li > a{
     padding: 10px 0;
 }
 .login-menu li a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .logout{
     width: 100px;
@@ -142,8 +142,8 @@ li > a{
     color: rgb(124, 143, 172);
 }
 .list li .active{
-    background: rgb(93, 135, 255);
-    color: white;
+    background: rgb(13, 202, 240);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -181,13 +181,13 @@ label{
     font-size: 14px;
 }
 .login-btn{
-    background-color:  rgba(255, 255, 255, .12);
-    color: white;
+    background-color:  rgba(255, 255, 255, 0.12);
+    color: rgb(129, 129, 129);
     border: none;
 }
 .box h3{
     font-size: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding-left: 10px;
     margin: 0 auto;
 }
@@ -200,15 +200,15 @@ label{
     text-align: center;
 }
 .user-tbl table{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     width: 100%;
 }
 .user-tbl tr{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
 }
 .user-tbl td,.user-tbl th{
     padding: 20px;
 }
 .user-tbl th{
-    color: white;
+    color: rgb(0, 0, 0);
 }

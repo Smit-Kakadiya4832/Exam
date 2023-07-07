@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="body">
@@ -17,9 +19,6 @@
             <div class="container">
                 <div class="row vh-100 align-center justify-center">
                     <div class="box">
-                        <img src="img/1675657457639-removebg-preview.png" alt="" class="logo-img mb-3" width="224px">
-                        <h3>Welcome to Modernize</h3>
-                        <span class="d-block mb-4">Your Admin Dashboard</span>
                         <table>
                             <tr>
                                 <td>
@@ -33,28 +32,62 @@
                             <tr>
                                 <td>
                                     <label class="d-block mt-2">E-mail</label>
-                                    <input type="text" id="login-email">
+                                    <input type="text" id="email">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <label class="d-block mt-2">Password</label>
-                                    <input type="text" id="login-password">
-                                    <a href="otp.html" class="d-block ms-3 forgot">Forgot Password ?</a>
+                                    <input type="text" id="password">
                                 </td>
                             </tr>
-                            
+
                         </table>
                         <input type="button" class="mt-4 login-btn" value="Login" onclick="login()">
                         <br>
-                        <a href="register.html" class="d-block ms-3">Dont Have An Account ? Sign Up</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/JavaScript">
+        let data=[
+        {
+            userid : 1,
+            name : "abc",
+            email : "smitkakadiya1009@gmail.com",
+            password : "smit@1009",
+            role : "Admin"
+        }
+    ];
+    const login = () => {
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+    
+                let obj = {
+                    name : name,
+                    email : email,
+                    password : password,
+                    role : 'user'
+                };
+    
+                if(user => user.role === admin && user.email === email && user.password === password){
+                    alert("Admin Login Successfull !....");
+                    document.getElementById('email').value = "";
+                    document.getElementById('password').value = "";
+                    alert("you are Login...")
+                    window.location.href = "dashboard.html"
+    
+                }else{
+                    alert("Envalid Your Email");
+                }
+                
+        }
+    </script>
+    
 </body>
+
 </html>
 <script src="login.js"></script>
