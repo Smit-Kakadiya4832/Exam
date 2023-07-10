@@ -132,9 +132,14 @@
           <table border="1">
             <thead>
               <tr>
+                <th class="heading">Grid</th>
                 <th class="heading">Name</th>
-                <th class="heading">Task</th>
-                <th class="heading">Action</th>
+                <th class="heading">Email</th>
+                <th class="heading">Password</th>
+                <th class="heading">Phone</th>
+                <th class="heading">Course</th>
+                <th class="heading">Fees</th>
+                <th class="heading">Button</th>
               </tr>
             </thead>
             <tbody id="record"></tbody>
@@ -144,7 +149,7 @@
       </div>
     </div>
   </section>
-
+  <script src="watchman.js"></script>
   <script type="text/javascript">
     let data = [];
 
@@ -156,7 +161,7 @@
       let record = (val == null) ? [] : val;
       let tbl = "";
       record.map((v) => {
-        const { userid, id, name, email, phone, course, fees } = v;
+        const { userid, id, name, email, password, phone, course, fees } = v;
         tbl += `
                     <tr>        
                         <td>${id}</td>        
